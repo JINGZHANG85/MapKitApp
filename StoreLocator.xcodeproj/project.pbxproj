@@ -29,6 +29,8 @@
 		CEAD797116A6FA1800DCC858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD793E16A6FA1700DCC858 /* Foundation.framework */; };
 		CEAD797916A6FA1800DCC858 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEAD797716A6FA1800DCC858 /* InfoPlist.strings */; };
 		CEAD797C16A6FA1800DCC858 /* StoreLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD797B16A6FA1800DCC858 /* StoreLocatorTests.m */; };
+		CEAD798616A6FCE000DCC858 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAD798516A6FCE000DCC858 /* MapKit.framework */; };
+		CEAD798916A70A8700DCC858 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD798816A70A8700DCC858 /* MapViewAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		CEAD797816A6FA1800DCC858 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEAD797A16A6FA1800DCC858 /* StoreLocatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreLocatorTests.h; sourceTree = "<group>"; };
 		CEAD797B16A6FA1800DCC858 /* StoreLocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreLocatorTests.m; sourceTree = "<group>"; };
+		CEAD798516A6FCE000DCC858 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEAD798716A70A8700DCC858 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		CEAD798816A70A8700DCC858 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAD798616A6FCE000DCC858 /* MapKit.framework in Frameworks */,
 				CEAD793D16A6FA1700DCC858 /* UIKit.framework in Frameworks */,
 				CEAD793F16A6FA1700DCC858 /* Foundation.framework in Frameworks */,
 				CEAD794116A6FA1700DCC858 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +106,7 @@
 		CEAD792D16A6FA1700DCC858 = {
 			isa = PBXGroup;
 			children = (
+				CEAD798516A6FCE000DCC858 /* MapKit.framework */,
 				CEAD794216A6FA1700DCC858 /* StoreLocator */,
 				CEAD797416A6FA1800DCC858 /* StoreLocatorTests */,
 				CEAD793B16A6FA1700DCC858 /* Frameworks */,
@@ -136,6 +143,8 @@
 				CEAD795716A6FA1800DCC858 /* MainStoryboard_iPad.storyboard */,
 				CEAD795A16A6FA1800DCC858 /* FirstViewController.h */,
 				CEAD795B16A6FA1800DCC858 /* FirstViewController.m */,
+				CEAD798716A70A8700DCC858 /* MapViewAnnotation.h */,
+				CEAD798816A70A8700DCC858 /* MapViewAnnotation.m */,
 				CEAD795D16A6FA1800DCC858 /* first.png */,
 				CEAD795F16A6FA1800DCC858 /* first@2x.png */,
 				CEAD796116A6FA1800DCC858 /* SecondViewController.h */,
@@ -299,6 +308,7 @@
 				CEAD794D16A6FA1700DCC858 /* AppDelegate.m in Sources */,
 				CEAD795C16A6FA1800DCC858 /* FirstViewController.m in Sources */,
 				CEAD796316A6FA1800DCC858 /* SecondViewController.m in Sources */,
+				CEAD798916A70A8700DCC858 /* MapViewAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

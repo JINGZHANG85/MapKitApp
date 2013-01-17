@@ -10,4 +10,13 @@
 
 @implementation MapViewAnnotation
 
+- (id)initWithTitle:(NSString *)title andCoordinate:(CLLocationCoordinate2D)coordinate {
+    self = [super init];
+    if (self) {
+        _title = title;
+        _coordinate = coordinate;
+    }
+    return self;
+}
+
 @end

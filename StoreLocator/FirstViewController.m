@@ -7,8 +7,13 @@
 //
 
 #import "FirstViewController.h"
+#import "MapViewAnnotation.h"
 
-@interface FirstViewController ()
+@interface FirstViewController () {
+    NSString *userLatitude;
+    NSString *userlongitude;
+    
+}
 
 @end
 
@@ -17,7 +22,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    userLatitude=@"";
+    userlongitude=@"";
+    
+    self.mapView.delegate=self;
+    self.mapView.showsUserLocation=YES;
+    
+    CLLocationCoordinate2D location;
+	location.latitude = (double) 53.343986;
+	location.longitude = (double) -6.249724;
+    
+    MapViewAnnotation *newAnnotation = [[MapViewAnnotation alloc] initWithTitle:@"Trinity College Sport Center" andCoordinate:location];
+	[self.mapView addAnnotation:(id)newAnnotation];
+}
+
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    NSString *lat=[[NSString alloc] initWithFormat:@"%f",userLocation.coordinate.latitude];
+    NSString *lng=[[NSString alloc] initWithFormat:@"%f",userLocation.coordinate.longitude];
+    
+    userLatitude=lat;
+    userlongitude=lng;
+    
+    MKCoordinateSpan span;
+    MKCoordinateRegion region;
+    
+    span.latitudeDelta=0.030;
+    span.longitudeDelta=0.030;
+    region.span=span;
+    region.center=[userLocation coordinate];
+    
+    
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning
