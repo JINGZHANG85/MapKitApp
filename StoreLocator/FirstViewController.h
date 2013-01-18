@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface FirstViewController : UIViewController <MKMapViewDelegate>
+@interface FirstViewController : UIViewController <MKMapViewDelegate, NSXMLParserDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic) NSMutableData *XMLData;
 
 @end

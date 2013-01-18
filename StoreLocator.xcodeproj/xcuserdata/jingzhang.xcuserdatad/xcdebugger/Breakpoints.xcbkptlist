@@ -7,13 +7,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "StoreLocator/MapViewAnnotation.m"
-         timestampString = "380047163.126655"
+         filePath = "StoreLocator/FirstViewController.m"
+         timestampString = "380206747.091609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "13"
-         endingLineNumber = "13"
-         landmarkName = "-initWithTitle:andCoordinate:"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "-parser:didStartElement:namespaceURI:qualifiedName:attributes:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,12 +21,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StoreLocator/FirstViewController.m"
-         timestampString = "380047169.403206"
+         timestampString = "380206747.091609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
+         landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -34,12 +34,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "StoreLocator/FirstViewController.m"
-         timestampString = "380047386.908223"
+         timestampString = "380206747.091609"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
-         landmarkName = "-mapView:didUpdateUserLocation:"
+         startingLineNumber = "73"
+         endingLineNumber = "73"
+         landmarkName = "-connection:didFailWithError:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StoreLocator/FirstViewController.m"
+         timestampString = "380206747.091609"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
+         landmarkName = "-connection:didReceiveData:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "StoreLocator/FirstViewController.m"
+         timestampString = "380206747.091609"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "61"
+         endingLineNumber = "61"
+         landmarkName = "-connection:didReceiveResponse:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
